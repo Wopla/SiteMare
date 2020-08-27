@@ -7,20 +7,10 @@
 		<script src="js/sweetalert2.all.min.js"></script>
 		<script src="js/prefixfree.js"></script>
 	</head>
+	<script type="text/javascript" src="menu.js"></script>  
 	<body>
 
-		<div id="fixe-haut">
-
-			<li>
-					<ul id="menu-menu-principal" class="sf-menu">
-						<li ><a href="acceuil.html"title="Retour au base">Acceuil</a></li>
-						<li class="current-menu-item "><a href="activites.html"title="Retour au base">Activités</a></li>
-						<li ><a href="peche.html"title="Un Brillant eleve!">Pêche</a></li>
-						<li><a href="evenements.html"title="Ca donne envie!">Évenements</a></li>
-						<li><a href="contacts.html"title="Les details...">Contacts</a></li>
-					</ul>
-				</li>
-		</div> 
+		<div id="fixe-haut" w3-include-html="menu.html"></div>
 
 		<section>
 			<br>
@@ -99,5 +89,8 @@
 				</p>
 			</div>
 		</footer>
+				<script>
+			includeHTML();
+		</script>
 	</body>
 </html>
